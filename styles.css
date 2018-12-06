@@ -1,0 +1,40 @@
+#start{
+    margin: 200px;
+    display: block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    line-height: 150px;
+    border-radius: 100%;
+    background-color: rgb(97, 137, 190);
+    box-shadow: 0 0 40px rgb(105,105,105);
+    animation: pulse2 1s;
+}
+#start:hover{
+    animation-direction: alternate;
+    animation: pulse 1s forwards;
+    transform: scale (1.2, 1.2);
+    background-color: brown;
+}
+@keyframes pulse{
+    0%{
+        transform: scale(1,1);
+    }
+    100%{
+        box-shadow: 0 0 10px rgb(105,105,105);
+        transform: scale(1.2, 1.2);
+    }
+}
+@keyframes pulse2{
+    0%{
+        box-shadow: 0 0 10px rgb(105,105,105);
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
